@@ -1,5 +1,5 @@
 // Replace 'YOUR_OPENWEATHERMAP_API_KEY' with your actual API key
-const apiKey = '89a2edbf874af2c3c33ba6183356a9dc';
+const apiKey = 'enter your api key';
 const apiUrl = 'https://api.openweathermap.org/data/2.5/weather';
 
 // Function to fetch weather data based on user input
