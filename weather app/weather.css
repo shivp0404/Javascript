@@ -1,0 +1,22 @@
+body {
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: black;
+  color: white;
+}
+
+.weather-container {
+  text-align: center;
+}
+
+.search-container {
+  margin-top: 20px;
+}
+
+.weather-info {
+  margin-top: 20px;
+}

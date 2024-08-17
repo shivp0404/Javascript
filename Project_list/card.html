@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    width: 100vw;
+    height: 100vh;
+    background:#603A28 ;
+}
+
+a {
+    text-align: center;
+    text-decoration: none;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3vw;
+}
+
+.section {
+    display: flex;
+    flex-wrap: wrap; /* Changed from nowrap to wrap */
+    justify-content: space-evenly; /* Center align items horizontally */
+    align-items:center; 
+    width: 100%;
+    height: auto; /* Change height to auto */
+}
+
+.card {
+    background-color: white;
+    width: 20%; /* Adjusted width to fit multiple cards per line */
+    min-width: 150px; /* Set a minimum width for better responsiveness */
+    height: max-content;
+    margin: 10px; /* Add some spacing between cards */
+    border-radius: 1.5vw;
+    color: black;
+    box-sizing: border-box;
+
+    font-size: 1.5vw;
+    box-shadow: 10px 10px 10px;
+}
+
+.card img{
+    width: 100%;
+}
+.card:hover {
+    box-shadow: 10px 10px 10px white;
+}
+  
+
+</style>
+<body>
+
+    <div class="main">
+        <h1>10 Module Of JavaScript</h1>
+        <div class="section">
+            <a href=" write path of file"> 
+                <div class="card">
+                    <h5>Module 1</h5>
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALYAAACUCAMAAAAJSiMLAAAAYFBMVEX////K7Pw5otv3+v1Lqd4fmtgAlNbK4vMtntpFptyo2fOBveXT5/VtteJgsOAKmNez1u7S8f7r9PuUyeq82vDe7fip0e3B3vGIw+e03/Wa0O+AwumgzutUrd92u+XC5/kAaDAmAAAFFElEQVR4nO2c7XbaMAyG8zkcyAdJGpoCCfd/l6OVHBKgqyUH+Wzz+2v84OSpp8ivJJsg8PLy8vLy8vLy8vLy+ucVd11OUde4Jr6q2+8SVRGUZuN545r6UCoVEaVUtnO64k1BZkby7N0ddTekPOqr0r0ravZaw4K7Wu9+WmtF0A3cTXx3mjpVQ2muqEJy1TvBLvDpETFK8ym23l4D9kd1GTy77KjfjFv8gwsHYbKHZyeMrSPG9VaH9bF+Ei7ZyPnu9FqIL3fcK4sFa4FblStT/ah4B9g8exEPsNqV9Ftphx28YzYZhMPEEhtjLFLtulg/PtcOO8gTfCvzVbF+ki12cFAukrc1dlwCt6wVtMYO8grDZG+sjfX/jD12cKK79WG0zJgrYDcD3a+rNLIqRFfA1raGqPQcu8WORxa3jVFfAzvIWdg23Ktgf1oqTj1X8dPuKthBQVGpd9Zo4Ib3Stg0da3m5u5RTrCvyQdKQbVjLrcj7KCFCKdXsCBX2A1W3lzD7Ag7gPKZ29Nyhg3PTZnexBl277EFhdiviO0u37xK2EFULX7saAn8e+zmPA5J9jLpfRI+JUPRUkqe77CbkT7MsZOKCAb8OXZ8qIShP1WZV/9PsZudA+irUuMG6jPspnRDfV1vU0f4DJtR0q4lUwP+BHsaQakoEZPmNtx+HrE3058+bi+hlLYIfmZix/p1HI51LUYd1lDwmFbFD9g5bgTJhxzzJ/YWsc2C+wH7gJH9IbjUn9hQ7nCx4xE+n2Spw7C0iu0Gk4hsiIThB06BDB3hPfYGY0SYuj7iG2W4vd9jn+DjKB0jOAMqzKgfsOGPTrfC1BfwE8YjiTvsDkcD4qENabcytYB32Oev0FaFMHV4hBhJDKnvsSENqVYaG9JuajzdXGJ3ECKZdGiH8NzKeLi5xMZxRilnoUBbeKUyZnWDaWgUpq4x7Zr3XxfY+ozaUThr15BHCBPZBTZa7Uw8/aFXNp/bL7Bxfj5ILza6v9G8UzLH1v/upXf2AtOuMfUCu4HCqJKOkQsWZIQ25hwb3V8qHSNQ2JBOAM2xoWSXd3/adZpTL7AxDW2FsS8F/XDcDLtx6/4UZWg2wz64dX8ZgXqOPfwl7m+JjcVvJF7YZET3t8R+c+T+cGdXpCnIDbuHb7tyf7SzwRN2jP2VVnqzwa2ZNumbsDeZG/d3wcYM7cyAxs73jtwfpD/qoU3dF37v3fT+aj2fJFFP2AcI7VS40cpxf3NsrCIj6cU+Y9olHofR2EnkxP3VJ8CmXo2YZh4QI9LFL7o/07b2N9hKfIvEkQv10PoC24H7gweT3N8jtiv3Rz41ugwScfcHZpl+aHSBPTjq69Dc3z22vPvrOe7vYbXF3R/ECOM2xhw7k97ZQyy66SdG59ilMHS9xaKbfjFkhu3A/WHapR8rnmOL93XQCDHOAs6DRBb61vtjHIa+YatCvPcXMdPfHFvc/THa2s+whaHZ7m+BrQZpbHR/A4N6ht1LY2Nf52SF7cz9sY5CT9jCR7quoY0jF9YVlukO8kmYWjdImFfkz9r9CVNjM557F1dfdpTN2vpsFMf9fQmHkdfYluOuL/qGJW2GMJfuR6WnrZCORarTF8eP4HJPB4hTKd3cm8VNZsbN6ZVUUZtRi+WOHB0zr+x+tWfjhFsp298h2Di4jKAG+x+k6tps/qK8njnNWnYOWYC/t6X6JaMqG/fEy1h/UCyntZC9vLy8vLy8vLy8vP5T/QbiQYYq5uJ3zQAAAABJRU5ErkJggg==" alt="">
+                    <h4>Video Player</h4>
+                </div>
+            </a>
+            <a href write path of file"> 
+            <div class="card">
+              <h5>Module 2</h5>
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALYAAACUCAMAAAAJSiMLAAAAYFBMVEX////K7Pw5otv3+v1Lqd4fmtgAlNbK4vMtntpFptyo2fOBveXT5/VtteJgsOAKmNez1u7S8f7r9PuUyeq82vDe7fip0e3B3vGIw+e03/Wa0O+AwumgzutUrd92u+XC5/kAaDAmAAAFFElEQVR4nO2c7XbaMAyG8zkcyAdJGpoCCfd/l6OVHBKgqyUH+Wzz+2v84OSpp8ivJJsg8PLy8vLy8vLy8vLy+ucVd11OUde4Jr6q2+8SVRGUZuN545r6UCoVEaVUtnO64k1BZkby7N0ddTekPOqr0r0ravZaw4K7Wu9+WmtF0A3cTXx3mjpVQ2muqEJy1TvBLvDpETFK8ym23l4D9kd1GTy77KjfjFv8gwsHYbKHZyeMrSPG9VaH9bF+Ei7ZyPnu9FqIL3fcK4sFa4FblStT/ah4B9g8exEPsNqV9Ftphx28YzYZhMPEEhtjLFLtulg/PtcOO8gTfCvzVbF+ki12cFAukrc1dlwCt6wVtMYO8grDZG+sjfX/jD12cKK79WG0zJgrYDcD3a+rNLIqRFfA1raGqPQcu8WORxa3jVFfAzvIWdg23Ktgf1oqTj1X8dPuKthBQVGpd9Zo4Ib3Stg0da3m5u5RTrCvyQdKQbVjLrcj7KCFCKdXsCBX2A1W3lzD7Ag7gPKZ29Nyhg3PTZnexBl277EFhdiviO0u37xK2EFULX7saAn8e+zmPA5J9jLpfRI+JUPRUkqe77CbkT7MsZOKCAb8OXZ8qIShP1WZV/9PsZudA+irUuMG6jPspnRDfV1vU0f4DJtR0q4lUwP+BHsaQakoEZPmNtx+HrE3058+bi+hlLYIfmZix/p1HI51LUYd1lDwmFbFD9g5bgTJhxzzJ/YWsc2C+wH7gJH9IbjUn9hQ7nCx4xE+n2Spw7C0iu0Gk4hsiIThB06BDB3hPfYGY0SYuj7iG2W4vd9jn+DjKB0jOAMqzKgfsOGPTrfC1BfwE8YjiTvsDkcD4qENabcytYB32Oev0FaFMHV4hBhJDKnvsSENqVYaG9JuajzdXGJ3ECKZdGiH8NzKeLi5xMZxRilnoUBbeKUyZnWDaWgUpq4x7Zr3XxfY+ozaUThr15BHCBPZBTZa7Uw8/aFXNp/bL7Bxfj5ILza6v9G8UzLH1v/upXf2AtOuMfUCu4HCqJKOkQsWZIQ25hwb3V8qHSNQ2JBOAM2xoWSXd3/adZpTL7AxDW2FsS8F/XDcDLtx6/4UZWg2wz64dX8ZgXqOPfwl7m+JjcVvJF7YZET3t8R+c+T+cGdXpCnIDbuHb7tyf7SzwRN2jP2VVnqzwa2ZNumbsDeZG/d3wcYM7cyAxs73jtwfpD/qoU3dF37v3fT+aj2fJFFP2AcI7VS40cpxf3NsrCIj6cU+Y9olHofR2EnkxP3VJ8CmXo2YZh4QI9LFL7o/07b2N9hKfIvEkQv10PoC24H7gweT3N8jtiv3Rz41ugwScfcHZpl+aHSBPTjq69Dc3z22vPvrOe7vYbXF3R/ECOM2xhw7k97ZQyy66SdG59ilMHS9xaKbfjFkhu3A/WHapR8rnmOL93XQCDHOAs6DRBb61vtjHIa+YatCvPcXMdPfHFvc/THa2s+whaHZ7m+BrQZpbHR/A4N6ht1LY2Nf52SF7cz9sY5CT9jCR7quoY0jF9YVlukO8kmYWjdImFfkz9r9CVNjM557F1dfdpTN2vpsFMf9fQmHkdfYluOuL/qGJW2GMJfuR6WnrZCORarTF8eP4HJPB4hTKd3cm8VNZsbN6ZVUUZtRi+WOHB0zr+x+tWfjhFsp298h2Di4jKAG+x+k6tps/qK8njnNWnYOWYC/t6X6JaMqG/fEy1h/UCyntZC9vLy8vLy8vLy8vP5T/QbiQYYq5uJ3zQAAAABJRU5ErkJggg==" alt="">
+             <h4>weatherApp</h4>
+            </div>
+            </a>
+            <a href write path of file">  
+         <div class="card">
+            <h5>Module 3</h5>
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALYAAACUCAMAAAAJSiMLAAAAYFBMVEX////K7Pw5otv3+v1Lqd4fmtgAlNbK4vMtntpFptyo2fOBveXT5/VtteJgsOAKmNez1u7S8f7r9PuUyeq82vDe7fip0e3B3vGIw+e03/Wa0O+AwumgzutUrd92u+XC5/kAaDAmAAAFFElEQVR4nO2c7XbaMAyG8zkcyAdJGpoCCfd/l6OVHBKgqyUH+Wzz+2v84OSpp8ivJJsg8PLy8vLy8vLy8vLy+ucVd11OUde4Jr6q2+8SVRGUZuN545r6UCoVEaVUtnO64k1BZkby7N0ddTekPOqr0r0ravZaw4K7Wu9+WmtF0A3cTXx3mjpVQ2muqEJy1TvBLvDpETFK8ym23l4D9kd1GTy77KjfjFv8gwsHYbKHZyeMrSPG9VaH9bF+Ei7ZyPnu9FqIL3fcK4sFa4FblStT/ah4B9g8exEPsNqV9Ftphx28YzYZhMPEEhtjLFLtulg/PtcOO8gTfCvzVbF+ki12cFAukrc1dlwCt6wVtMYO8grDZG+sjfX/jD12cKK79WG0zJgrYDcD3a+rNLIqRFfA1raGqPQcu8WORxa3jVFfAzvIWdg23Ktgf1oqTj1X8dPuKthBQVGpd9Zo4Ib3Stg0da3m5u5RTrCvyQdKQbVjLrcj7KCFCKdXsCBX2A1W3lzD7Ag7gPKZ29Nyhg3PTZnexBl277EFhdiviO0u37xK2EFULX7saAn8e+zmPA5J9jLpfRI+JUPRUkqe77CbkT7MsZOKCAb8OXZ8qIShP1WZV/9PsZudA+irUuMG6jPspnRDfV1vU0f4DJtR0q4lUwP+BHsaQakoEZPmNtx+HrE3058+bi+hlLYIfmZix/p1HI51LUYd1lDwmFbFD9g5bgTJhxzzJ/YWsc2C+wH7gJH9IbjUn9hQ7nCx4xE+n2Spw7C0iu0Gk4hsiIThB06BDB3hPfYGY0SYuj7iG2W4vd9jn+DjKB0jOAMqzKgfsOGPTrfC1BfwE8YjiTvsDkcD4qENabcytYB32Oev0FaFMHV4hBhJDKnvsSENqVYaG9JuajzdXGJ3ECKZdGiH8NzKeLi5xMZxRilnoUBbeKUyZnWDaWgUpq4x7Zr3XxfY+ozaUThr15BHCBPZBTZa7Uw8/aFXNp/bL7Bxfj5ILza6v9G8UzLH1v/upXf2AtOuMfUCu4HCqJKOkQsWZIQ25hwb3V8qHSNQ2JBOAM2xoWSXd3/adZpTL7AxDW2FsS8F/XDcDLtx6/4UZWg2wz64dX8ZgXqOPfwl7m+JjcVvJF7YZET3t8R+c+T+cGdXpCnIDbuHb7tyf7SzwRN2jP2VVnqzwa2ZNumbsDeZG/d3wcYM7cyAxs73jtwfpD/qoU3dF37v3fT+aj2fJFFP2AcI7VS40cpxf3NsrCIj6cU+Y9olHofR2EnkxP3VJ8CmXo2YZh4QI9LFL7o/07b2N9hKfIvEkQv10PoC24H7gweT3N8jtiv3Rz41ugwScfcHZpl+aHSBPTjq69Dc3z22vPvrOe7vYbXF3R/ECOM2xhw7k97ZQyy66SdG59ilMHS9xaKbfjFkhu3A/WHapR8rnmOL93XQCDHOAs6DRBb61vtjHIa+YatCvPcXMdPfHFvc/THa2s+whaHZ7m+BrQZpbHR/A4N6ht1LY2Nf52SF7cz9sY5CT9jCR7quoY0jF9YVlukO8kmYWjdImFfkz9r9CVNjM557F1dfdpTN2vpsFMf9fQmHkdfYluOuL/qGJW2GMJfuR6WnrZCORarTF8eP4HJPB4hTKd3cm8VNZsbN6ZVUUZtRi+WOHB0zr+x+tWfjhFsp298h2Di4jKAG+x+k6tps/qK8njnNWnYOWYC/t6X6JaMqG/fEy1h/UCyntZC9vLy8vLy8vLy8vP5T/QbiQYYq5uJ3zQAAAABJRU5ErkJggg==" alt="">
+           <h4>To-Do-List</h4>
+        </div>
+    </a>
+          <a hr write path of file"> 
+         <div class="card">
+            <h5>Module 4</h5>
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALYAAACUCAMAAAAJSiMLAAAAYFBMVEX////K7Pw5otv3+v1Lqd4fmtgAlNbK4vMtntpFptyo2fOBveXT5/VtteJgsOAKmNez1u7S8f7r9PuUyeq82vDe7fip0e3B3vGIw+e03/Wa0O+AwumgzutUrd92u+XC5/kAaDAmAAAFFElEQVR4nO2c7XbaMAyG8zkcyAdJGpoCCfd/l6OVHBKgqyUH+Wzz+2v84OSpp8ivJJsg8PLy8vLy8vLy8vLy+ucVd11OUde4Jr6q2+8SVRGUZuN545r6UCoVEaVUtnO64k1BZkby7N0ddTekPOqr0r0ravZaw4K7Wu9+WmtF0A3cTXx3mjpVQ2muqEJy1TvBLvDpETFK8ym23l4D9kd1GTy77KjfjFv8gwsHYbKHZyeMrSPG9VaH9bF+Ei7ZyPnu9FqIL3fcK4sFa4FblStT/ah4B9g8exEPsNqV9Ftphx28YzYZhMPEEhtjLFLtulg/PtcOO8gTfCvzVbF+ki12cFAukrc1dlwCt6wVtMYO8grDZG+sjfX/jD12cKK79WG0zJgrYDcD3a+rNLIqRFfA1raGqPQcu8WORxa3jVFfAzvIWdg23Ktgf1oqTj1X8dPuKthBQVGpd9Zo4Ib3Stg0da3m5u5RTrCvyQdKQbVjLrcj7KCFCKdXsCBX2A1W3lzD7Ag7gPKZ29Nyhg3PTZnexBl277EFhdiviO0u37xK2EFULX7saAn8e+zmPA5J9jLpfRI+JUPRUkqe77CbkT7MsZOKCAb8OXZ8qIShP1WZV/9PsZudA+irUuMG6jPspnRDfV1vU0f4DJtR0q4lUwP+BHsaQakoEZPmNtx+HrE3058+bi+hlLYIfmZix/p1HI51LUYd1lDwmFbFD9g5bgTJhxzzJ/YWsc2C+wH7gJH9IbjUn9hQ7nCx4xE+n2Spw7C0iu0Gk4hsiIThB06BDB3hPfYGY0SYuj7iG2W4vd9jn+DjKB0jOAMqzKgfsOGPTrfC1BfwE8YjiTvsDkcD4qENabcytYB32Oev0FaFMHV4hBhJDKnvsSENqVYaG9JuajzdXGJ3ECKZdGiH8NzKeLi5xMZxRilnoUBbeKUyZnWDaWgUpq4x7Zr3XxfY+ozaUThr15BHCBPZBTZa7Uw8/aFXNp/bL7Bxfj5ILza6v9G8UzLH1v/upXf2AtOuMfUCu4HCqJKOkQsWZIQ25hwb3V8qHSNQ2JBOAM2xoWSXd3/adZpTL7AxDW2FsS8F/XDcDLtx6/4UZWg2wz64dX8ZgXqOPfwl7m+JjcVvJF7YZET3t8R+c+T+cGdXpCnIDbuHb7tyf7SzwRN2jP2VVnqzwa2ZNumbsDeZG/d3wcYM7cyAxs73jtwfpD/qoU3dF37v3fT+aj2fJFFP2AcI7VS40cpxf3NsrCIj6cU+Y9olHofR2EnkxP3VJ8CmXo2YZh4QI9LFL7o/07b2N9hKfIvEkQv10PoC24H7gweT3N8jtiv3Rz41ugwScfcHZpl+aHSBPTjq69Dc3z22vPvrOe7vYbXF3R/ECOM2xhw7k97ZQyy66SdG59ilMHS9xaKbfjFkhu3A/WHapR8rnmOL93XQCDHOAs6DRBb61vtjHIa+YatCvPcXMdPfHFvc/THa2s+whaHZ7m+BrQZpbHR/A4N6ht1LY2Nf52SF7cz9sY5CT9jCR7quoY0jF9YVlukO8kmYWjdImFfkz9r9CVNjM557F1dfdpTN2vpsFMf9fQmHkdfYluOuL/qGJW2GMJfuR6WnrZCORarTF8eP4HJPB4hTKd3cm8VNZsbN6ZVUUZtRi+WOHB0zr+x+tWfjhFsp298h2Di4jKAG+x+k6tps/qK8njnNWnYOWYC/t6X6JaMqG/fEy1h/UCyntZC9vLy8vLy8vLy8vP5T/QbiQYYq5uJ3zQAAAABJRU5ErkJggg==" alt="">
+           <h4>Watch</h4>
+        </div>
+    </a>
+          <a h write path of file"> 
+         <div class="card">
+            <h5>Module 5</h5>
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALYAAACUCAMAAAAJSiMLAAAAYFBMVEX////K7Pw5otv3+v1Lqd4fmtgAlNbK4vMtntpFptyo2fOBveXT5/VtteJgsOAKmNez1u7S8f7r9PuUyeq82vDe7fip0e3B3vGIw+e03/Wa0O+AwumgzutUrd92u+XC5/kAaDAmAAAFFElEQVR4nO2c7XbaMAyG8zkcyAdJGpoCCfd/l6OVHBKgqyUH+Wzz+2v84OSpp8ivJJsg8PLy8vLy8vLy8vLy+ucVd11OUde4Jr6q2+8SVRGUZuN545r6UCoVEaVUtnO64k1BZkby7N0ddTekPOqr0r0ravZaw4K7Wu9+WmtF0A3cTXx3mjpVQ2muqEJy1TvBLvDpETFK8ym23l4D9kd1GTy77KjfjFv8gwsHYbKHZyeMrSPG9VaH9bF+Ei7ZyPnu9FqIL3fcK4sFa4FblStT/ah4B9g8exEPsNqV9Ftphx28YzYZhMPEEhtjLFLtulg/PtcOO8gTfCvzVbF+ki12cFAukrc1dlwCt6wVtMYO8grDZG+sjfX/jD12cKK79WG0zJgrYDcD3a+rNLIqRFfA1raGqPQcu8WORxa3jVFfAzvIWdg23Ktgf1oqTj1X8dPuKthBQVGpd9Zo4Ib3Stg0da3m5u5RTrCvyQdKQbVjLrcj7KCFCKdXsCBX2A1W3lzD7Ag7gPKZ29Nyhg3PTZnexBl277EFhdiviO0u37xK2EFULX7saAn8e+zmPA5J9jLpfRI+JUPRUkqe77CbkT7MsZOKCAb8OXZ8qIShP1WZV/9PsZudA+irUuMG6jPspnRDfV1vU0f4DJtR0q4lUwP+BHsaQakoEZPmNtx+HrE3058+bi+hlLYIfmZix/p1HI51LUYd1lDwmFbFD9g5bgTJhxzzJ/YWsc2C+wH7gJH9IbjUn9hQ7nCx4xE+n2Spw7C0iu0Gk4hsiIThB06BDB3hPfYGY0SYuj7iG2W4vd9jn+DjKB0jOAMqzKgfsOGPTrfC1BfwE8YjiTvsDkcD4qENabcytYB32Oev0FaFMHV4hBhJDKnvsSENqVYaG9JuajzdXGJ3ECKZdGiH8NzKeLi5xMZxRilnoUBbeKUyZnWDaWgUpq4x7Zr3XxfY+ozaUThr15BHCBPZBTZa7Uw8/aFXNp/bL7Bxfj5ILza6v9G8UzLH1v/upXf2AtOuMfUCu4HCqJKOkQsWZIQ25hwb3V8qHSNQ2JBOAM2xoWSXd3/adZpTL7AxDW2FsS8F/XDcDLtx6/4UZWg2wz64dX8ZgXqOPfwl7m+JjcVvJF7YZET3t8R+c+T+cGdXpCnIDbuHb7tyf7SzwRN2jP2VVnqzwa2ZNumbsDeZG/d3wcYM7cyAxs73jtwfpD/qoU3dF37v3fT+aj2fJFFP2AcI7VS40cpxf3NsrCIj6cU+Y9olHofR2EnkxP3VJ8CmXo2YZh4QI9LFL7o/07b2N9hKfIvEkQv10PoC24H7gweT3N8jtiv3Rz41ugwScfcHZpl+aHSBPTjq69Dc3z22vPvrOe7vYbXF3R/ECOM2xhw7k97ZQyy66SdG59ilMHS9xaKbfjFkhu3A/WHapR8rnmOL93XQCDHOAs6DRBb61vtjHIa+YatCvPcXMdPfHFvc/THa2s+whaHZ7m+BrQZpbHR/A4N6ht1LY2Nf52SF7cz9sY5CT9jCR7quoY0jF9YVlukO8kmYWjdImFfkz9r9CVNjM557F1dfdpTN2vpsFMf9fQmHkdfYluOuL/qGJW2GMJfuR6WnrZCORarTF8eP4HJPB4hTKd3cm8VNZsbN6ZVUUZtRi+WOHB0zr+x+tWfjhFsp298h2Di4jKAG+x+k6tps/qK8njnNWnYOWYC/t6X6JaMqG/fEy1h/UCyntZC9vLy8vLy8vLy8vP5T/QbiQYYq5uJ3zQAAAABJRU5ErkJggg==" alt="">
+          <h4>Note App</h4>
+        </div>
+    </a>
+          <a href="/ write path of file"> 
+         <div class="card">
+            <h5>Module 6</h5>
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALYAAACUCAMAAAAJSiMLAAAAYFBMVEX////K7Pw5otv3+v1Lqd4fmtgAlNbK4vMtntpFptyo2fOBveXT5/VtteJgsOAKmNez1u7S8f7r9PuUyeq82vDe7fip0e3B3vGIw+e03/Wa0O+AwumgzutUrd92u+XC5/kAaDAmAAAFFElEQVR4nO2c7XbaMAyG8zkcyAdJGpoCCfd/l6OVHBKgqyUH+Wzz+2v84OSpp8ivJJsg8PLy8vLy8vLy8vLy+ucVd11OUde4Jr6q2+8SVRGUZuN545r6UCoVEaVUtnO64k1BZkby7N0ddTekPOqr0r0ravZaw4K7Wu9+WmtF0A3cTXx3mjpVQ2muqEJy1TvBLvDpETFK8ym23l4D9kd1GTy77KjfjFv8gwsHYbKHZyeMrSPG9VaH9bF+Ei7ZyPnu9FqIL3fcK4sFa4FblStT/ah4B9g8exEPsNqV9Ftphx28YzYZhMPEEhtjLFLtulg/PtcOO8gTfCvzVbF+ki12cFAukrc1dlwCt6wVtMYO8grDZG+sjfX/jD12cKK79WG0zJgrYDcD3a+rNLIqRFfA1raGqPQcu8WORxa3jVFfAzvIWdg23Ktgf1oqTj1X8dPuKthBQVGpd9Zo4Ib3Stg0da3m5u5RTrCvyQdKQbVjLrcj7KCFCKdXsCBX2A1W3lzD7Ag7gPKZ29Nyhg3PTZnexBl277EFhdiviO0u37xK2EFULX7saAn8e+zmPA5J9jLpfRI+JUPRUkqe77CbkT7MsZOKCAb8OXZ8qIShP1WZV/9PsZudA+irUuMG6jPspnRDfV1vU0f4DJtR0q4lUwP+BHsaQakoEZPmNtx+HrE3058+bi+hlLYIfmZix/p1HI51LUYd1lDwmFbFD9g5bgTJhxzzJ/YWsc2C+wH7gJH9IbjUn9hQ7nCx4xE+n2Spw7C0iu0Gk4hsiIThB06BDB3hPfYGY0SYuj7iG2W4vd9jn+DjKB0jOAMqzKgfsOGPTrfC1BfwE8YjiTvsDkcD4qENabcytYB32Oev0FaFMHV4hBhJDKnvsSENqVYaG9JuajzdXGJ3ECKZdGiH8NzKeLi5xMZxRilnoUBbeKUyZnWDaWgUpq4x7Zr3XxfY+ozaUThr15BHCBPZBTZa7Uw8/aFXNp/bL7Bxfj5ILza6v9G8UzLH1v/upXf2AtOuMfUCu4HCqJKOkQsWZIQ25hwb3V8qHSNQ2JBOAM2xoWSXd3/adZpTL7AxDW2FsS8F/XDcDLtx6/4UZWg2wz64dX8ZgXqOPfwl7m+JjcVvJF7YZET3t8R+c+T+cGdXpCnIDbuHb7tyf7SzwRN2jP2VVnqzwa2ZNumbsDeZG/d3wcYM7cyAxs73jtwfpD/qoU3dF37v3fT+aj2fJFFP2AcI7VS40cpxf3NsrCIj6cU+Y9olHofR2EnkxP3VJ8CmXo2YZh4QI9LFL7o/07b2N9hKfIvEkQv10PoC24H7gweT3N8jtiv3Rz41ugwScfcHZpl+aHSBPTjq69Dc3z22vPvrOe7vYbXF3R/ECOM2xhw7k97ZQyy66SdG59ilMHS9xaKbfjFkhu3A/WHapR8rnmOL93XQCDHOAs6DRBb61vtjHIa+YatCvPcXMdPfHFvc/THa2s+whaHZ7m+BrQZpbHR/A4N6ht1LY2Nf52SF7cz9sY5CT9jCR7quoY0jF9YVlukO8kmYWjdImFfkz9r9CVNjM557F1dfdpTN2vpsFMf9fQmHkdfYluOuL/qGJW2GMJfuR6WnrZCORarTF8eP4HJPB4hTKd3cm8VNZsbN6ZVUUZtRi+WOHB0zr+x+tWfjhFsp298h2Di4jKAG+x+k6tps/qK8njnNWnYOWYC/t6X6JaMqG/fEy1h/UCyntZC9vLy8vLy8vLy8vP5T/QbiQYYq5uJ3zQAAAABJRU5ErkJggg==" alt="">
+           <h4>Task tracker</h4>
+        </div>
+    </a>
+          <a href="/ write path of file"> 
+         <div class="card">
+            <h5>Module 7</h5>
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALYAAACUCAMAAAAJSiMLAAAAYFBMVEX////K7Pw5otv3+v1Lqd4fmtgAlNbK4vMtntpFptyo2fOBveXT5/VtteJgsOAKmNez1u7S8f7r9PuUyeq82vDe7fip0e3B3vGIw+e03/Wa0O+AwumgzutUrd92u+XC5/kAaDAmAAAFFElEQVR4nO2c7XbaMAyG8zkcyAdJGpoCCfd/l6OVHBKgqyUH+Wzz+2v84OSpp8ivJJsg8PLy8vLy8vLy8vLy+ucVd11OUde4Jr6q2+8SVRGUZuN545r6UCoVEaVUtnO64k1BZkby7N0ddTekPOqr0r0ravZaw4K7Wu9+WmtF0A3cTXx3mjpVQ2muqEJy1TvBLvDpETFK8ym23l4D9kd1GTy77KjfjFv8gwsHYbKHZyeMrSPG9VaH9bF+Ei7ZyPnu9FqIL3fcK4sFa4FblStT/ah4B9g8exEPsNqV9Ftphx28YzYZhMPEEhtjLFLtulg/PtcOO8gTfCvzVbF+ki12cFAukrc1dlwCt6wVtMYO8grDZG+sjfX/jD12cKK79WG0zJgrYDcD3a+rNLIqRFfA1raGqPQcu8WORxa3jVFfAzvIWdg23Ktgf1oqTj1X8dPuKthBQVGpd9Zo4Ib3Stg0da3m5u5RTrCvyQdKQbVjLrcj7KCFCKdXsCBX2A1W3lzD7Ag7gPKZ29Nyhg3PTZnexBl277EFhdiviO0u37xK2EFULX7saAn8e+zmPA5J9jLpfRI+JUPRUkqe77CbkT7MsZOKCAb8OXZ8qIShP1WZV/9PsZudA+irUuMG6jPspnRDfV1vU0f4DJtR0q4lUwP+BHsaQakoEZPmNtx+HrE3058+bi+hlLYIfmZix/p1HI51LUYd1lDwmFbFD9g5bgTJhxzzJ/YWsc2C+wH7gJH9IbjUn9hQ7nCx4xE+n2Spw7C0iu0Gk4hsiIThB06BDB3hPfYGY0SYuj7iG2W4vd9jn+DjKB0jOAMqzKgfsOGPTrfC1BfwE8YjiTvsDkcD4qENabcytYB32Oev0FaFMHV4hBhJDKnvsSENqVYaG9JuajzdXGJ3ECKZdGiH8NzKeLi5xMZxRilnoUBbeKUyZnWDaWgUpq4x7Zr3XxfY+ozaUThr15BHCBPZBTZa7Uw8/aFXNp/bL7Bxfj5ILza6v9G8UzLH1v/upXf2AtOuMfUCu4HCqJKOkQsWZIQ25hwb3V8qHSNQ2JBOAM2xoWSXd3/adZpTL7AxDW2FsS8F/XDcDLtx6/4UZWg2wz64dX8ZgXqOPfwl7m+JjcVvJF7YZET3t8R+c+T+cGdXpCnIDbuHb7tyf7SzwRN2jP2VVnqzwa2ZNumbsDeZG/d3wcYM7cyAxs73jtwfpD/qoU3dF37v3fT+aj2fJFFP2AcI7VS40cpxf3NsrCIj6cU+Y9olHofR2EnkxP3VJ8CmXo2YZh4QI9LFL7o/07b2N9hKfIvEkQv10PoC24H7gweT3N8jtiv3Rz41ugwScfcHZpl+aHSBPTjq69Dc3z22vPvrOe7vYbXF3R/ECOM2xhw7k97ZQyy66SdG59ilMHS9xaKbfjFkhu3A/WHapR8rnmOL93XQCDHOAs6DRBb61vtjHIa+YatCvPcXMdPfHFvc/THa2s+whaHZ7m+BrQZpbHR/A4N6ht1LY2Nf52SF7cz9sY5CT9jCR7quoY0jF9YVlukO8kmYWjdImFfkz9r9CVNjM557F1dfdpTN2vpsFMf9fQmHkdfYluOuL/qGJW2GMJfuR6WnrZCORarTF8eP4HJPB4hTKd3cm8VNZsbN6ZVUUZtRi+WOHB0zr+x+tWfjhFsp298h2Di4jKAG+x+k6tps/qK8njnNWnYOWYC/t6X6JaMqG/fEy1h/UCyntZC9vLy8vLy8vLy8vP5T/QbiQYYq5uJ3zQAAAABJRU5ErkJggg==" alt="">
+           <h4>Audio Player</h4>
+        </div>
+    </a>
+          <a href=" write path of file"> 
+         <div class="card">
+            <h5>Module 8</h5>
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALYAAACUCAMAAAAJSiMLAAAAYFBMVEX////K7Pw5otv3+v1Lqd4fmtgAlNbK4vMtntpFptyo2fOBveXT5/VtteJgsOAKmNez1u7S8f7r9PuUyeq82vDe7fip0e3B3vGIw+e03/Wa0O+AwumgzutUrd92u+XC5/kAaDAmAAAFFElEQVR4nO2c7XbaMAyG8zkcyAdJGpoCCfd/l6OVHBKgqyUH+Wzz+2v84OSpp8ivJJsg8PLy8vLy8vLy8vLy+ucVd11OUde4Jr6q2+8SVRGUZuN545r6UCoVEaVUtnO64k1BZkby7N0ddTekPOqr0r0ravZaw4K7Wu9+WmtF0A3cTXx3mjpVQ2muqEJy1TvBLvDpETFK8ym23l4D9kd1GTy77KjfjFv8gwsHYbKHZyeMrSPG9VaH9bF+Ei7ZyPnu9FqIL3fcK4sFa4FblStT/ah4B9g8exEPsNqV9Ftphx28YzYZhMPEEhtjLFLtulg/PtcOO8gTfCvzVbF+ki12cFAukrc1dlwCt6wVtMYO8grDZG+sjfX/jD12cKK79WG0zJgrYDcD3a+rNLIqRFfA1raGqPQcu8WORxa3jVFfAzvIWdg23Ktgf1oqTj1X8dPuKthBQVGpd9Zo4Ib3Stg0da3m5u5RTrCvyQdKQbVjLrcj7KCFCKdXsCBX2A1W3lzD7Ag7gPKZ29Nyhg3PTZnexBl277EFhdiviO0u37xK2EFULX7saAn8e+zmPA5J9jLpfRI+JUPRUkqe77CbkT7MsZOKCAb8OXZ8qIShP1WZV/9PsZudA+irUuMG6jPspnRDfV1vU0f4DJtR0q4lUwP+BHsaQakoEZPmNtx+HrE3058+bi+hlLYIfmZix/p1HI51LUYd1lDwmFbFD9g5bgTJhxzzJ/YWsc2C+wH7gJH9IbjUn9hQ7nCx4xE+n2Spw7C0iu0Gk4hsiIThB06BDB3hPfYGY0SYuj7iG2W4vd9jn+DjKB0jOAMqzKgfsOGPTrfC1BfwE8YjiTvsDkcD4qENabcytYB32Oev0FaFMHV4hBhJDKnvsSENqVYaG9JuajzdXGJ3ECKZdGiH8NzKeLi5xMZxRilnoUBbeKUyZnWDaWgUpq4x7Zr3XxfY+ozaUThr15BHCBPZBTZa7Uw8/aFXNp/bL7Bxfj5ILza6v9G8UzLH1v/upXf2AtOuMfUCu4HCqJKOkQsWZIQ25hwb3V8qHSNQ2JBOAM2xoWSXd3/adZpTL7AxDW2FsS8F/XDcDLtx6/4UZWg2wz64dX8ZgXqOPfwl7m+JjcVvJF7YZET3t8R+c+T+cGdXpCnIDbuHb7tyf7SzwRN2jP2VVnqzwa2ZNumbsDeZG/d3wcYM7cyAxs73jtwfpD/qoU3dF37v3fT+aj2fJFFP2AcI7VS40cpxf3NsrCIj6cU+Y9olHofR2EnkxP3VJ8CmXo2YZh4QI9LFL7o/07b2N9hKfIvEkQv10PoC24H7gweT3N8jtiv3Rz41ugwScfcHZpl+aHSBPTjq69Dc3z22vPvrOe7vYbXF3R/ECOM2xhw7k97ZQyy66SdG59ilMHS9xaKbfjFkhu3A/WHapR8rnmOL93XQCDHOAs6DRBb61vtjHIa+YatCvPcXMdPfHFvc/THa2s+whaHZ7m+BrQZpbHR/A4N6ht1LY2Nf52SF7cz9sY5CT9jCR7quoY0jF9YVlukO8kmYWjdImFfkz9r9CVNjM557F1dfdpTN2vpsFMf9fQmHkdfYluOuL/qGJW2GMJfuR6WnrZCORarTF8eP4HJPB4hTKd3cm8VNZsbN6ZVUUZtRi+WOHB0zr+x+tWfjhFsp298h2Di4jKAG+x+k6tps/qK8njnNWnYOWYC/t6X6JaMqG/fEy1h/UCyntZC9vLy8vLy8vLy8vP5T/QbiQYYq5uJ3zQAAAABJRU5ErkJggg==" alt="">
+           <h4>Countdown Timer</h4>
+        </div>
+    </a>
+          <a href="write path of file"> 
+         <div class="card">
+            <h5>Module 9</h5>
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALYAAACUCAMAAAAJSiMLAAAAYFBMVEX////K7Pw5otv3+v1Lqd4fmtgAlNbK4vMtntpFptyo2fOBveXT5/VtteJgsOAKmNez1u7S8f7r9PuUyeq82vDe7fip0e3B3vGIw+e03/Wa0O+AwumgzutUrd92u+XC5/kAaDAmAAAFFElEQVR4nO2c7XbaMAyG8zkcyAdJGpoCCfd/l6OVHBKgqyUH+Wzz+2v84OSpp8ivJJsg8PLy8vLy8vLy8vLy+ucVd11OUde4Jr6q2+8SVRGUZuN545r6UCoVEaVUtnO64k1BZkby7N0ddTekPOqr0r0ravZaw4K7Wu9+WmtF0A3cTXx3mjpVQ2muqEJy1TvBLvDpETFK8ym23l4D9kd1GTy77KjfjFv8gwsHYbKHZyeMrSPG9VaH9bF+Ei7ZyPnu9FqIL3fcK4sFa4FblStT/ah4B9g8exEPsNqV9Ftphx28YzYZhMPEEhtjLFLtulg/PtcOO8gTfCvzVbF+ki12cFAukrc1dlwCt6wVtMYO8grDZG+sjfX/jD12cKK79WG0zJgrYDcD3a+rNLIqRFfA1raGqPQcu8WORxa3jVFfAzvIWdg23Ktgf1oqTj1X8dPuKthBQVGpd9Zo4Ib3Stg0da3m5u5RTrCvyQdKQbVjLrcj7KCFCKdXsCBX2A1W3lzD7Ag7gPKZ29Nyhg3PTZnexBl277EFhdiviO0u37xK2EFULX7saAn8e+zmPA5J9jLpfRI+JUPRUkqe77CbkT7MsZOKCAb8OXZ8qIShP1WZV/9PsZudA+irUuMG6jPspnRDfV1vU0f4DJtR0q4lUwP+BHsaQakoEZPmNtx+HrE3058+bi+hlLYIfmZix/p1HI51LUYd1lDwmFbFD9g5bgTJhxzzJ/YWsc2C+wH7gJH9IbjUn9hQ7nCx4xE+n2Spw7C0iu0Gk4hsiIThB06BDB3hPfYGY0SYuj7iG2W4vd9jn+DjKB0jOAMqzKgfsOGPTrfC1BfwE8YjiTvsDkcD4qENabcytYB32Oev0FaFMHV4hBhJDKnvsSENqVYaG9JuajzdXGJ3ECKZdGiH8NzKeLi5xMZxRilnoUBbeKUyZnWDaWgUpq4x7Zr3XxfY+ozaUThr15BHCBPZBTZa7Uw8/aFXNp/bL7Bxfj5ILza6v9G8UzLH1v/upXf2AtOuMfUCu4HCqJKOkQsWZIQ25hwb3V8qHSNQ2JBOAM2xoWSXd3/adZpTL7AxDW2FsS8F/XDcDLtx6/4UZWg2wz64dX8ZgXqOPfwl7m+JjcVvJF7YZET3t8R+c+T+cGdXpCnIDbuHb7tyf7SzwRN2jP2VVnqzwa2ZNumbsDeZG/d3wcYM7cyAxs73jtwfpD/qoU3dF37v3fT+aj2fJFFP2AcI7VS40cpxf3NsrCIj6cU+Y9olHofR2EnkxP3VJ8CmXo2YZh4QI9LFL7o/07b2N9hKfIvEkQv10PoC24H7gweT3N8jtiv3Rz41ugwScfcHZpl+aHSBPTjq69Dc3z22vPvrOe7vYbXF3R/ECOM2xhw7k97ZQyy66SdG59ilMHS9xaKbfjFkhu3A/WHapR8rnmOL93XQCDHOAs6DRBb61vtjHIa+YatCvPcXMdPfHFvc/THa2s+whaHZ7m+BrQZpbHR/A4N6ht1LY2Nf52SF7cz9sY5CT9jCR7quoY0jF9YVlukO8kmYWjdImFfkz9r9CVNjM557F1dfdpTN2vpsFMf9fQmHkdfYluOuL/qGJW2GMJfuR6WnrZCORarTF8eP4HJPB4hTKd3cm8VNZsbN6ZVUUZtRi+WOHB0zr+x+tWfjhFsp298h2Di4jKAG+x+k6tps/qK8njnNWnYOWYC/t6X6JaMqG/fEy1h/UCyntZC9vLy8vLy8vLy8vP5T/QbiQYYq5uJ3zQAAAABJRU5ErkJggg==" alt="">
+           <h4>Analog Watch</h4>
+        </div>
+
+        </div>
+    </div>
+    
+</body>
+</html>

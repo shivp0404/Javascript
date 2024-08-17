@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .watch{
+        border: 2px solid;
+        width: 50vw;
+        height: 50vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        background-color: black;
+    }
+    .block{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+       font-size: 10vw;
+        border: 2px solid;
+        width: 30%;
+        height: 50%;
+        background-color: beige;
+        
+
+    }
+    .date{
+        background-color: whitesmoke;
+        display: flex;
+        align-items: center;
+        justify-content:space-between;
+        position: absolute;
+        border: 2px solid black;
+        width: 50vw;
+        height: 4vw;
+        font-size: 3vw;
+        margin-bottom: 20vw;
+    }
+</style>
+<body>
+    <div class="date">
+    </div>
+    <div class="watch">
+        <div class="block" id="hour">00</div>
+        <div class="block" id="minute">00</div>
+        <div class="block" id="second">00</div>
+    </div>
+    <script src="watch.js"></script>
+</body>
+</html>

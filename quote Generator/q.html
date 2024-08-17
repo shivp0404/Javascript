@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="main"></div>
+</body>
+<script>
+    var main = document.getElementById('main')
+  async function joke(){
+    var baseurl='https://api.chucknorris.io/jokes/random'
+    const  response= await fetch(baseurl)
+    var data = await response.json()
+
+}
+
+joke()
+
+</script>
+</html>

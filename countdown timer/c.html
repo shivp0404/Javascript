@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main">
+        <div id="boxh" class="box">
+            00
+        </div>
+        <div class="colon">:</div>
+        <div id="boxm" class="box">
+            00
+        </div>
+        <div class="colon">:</div>
+        <div id="boxs" class="box">
+            00
+        </div>
+    </div>
+    <div class="functions">
+        <button id="set" class="btn">Set Timer</button>
+        <button id="start" class="btn">Start</button>
+        <button id="pause" class="btn">Pause</button>
+        <button id="reset"  class="btn">Reset</button>
+    </div>
+
+    <script>
+        var sec, min, hour,paused,intervalid
+   
+        var hourb = document.getElementById('boxh');
+        var minb = document.getElementById('boxm');
+        var secb = document.getElementById('boxs');
+
+        var start = document.getElementById('start');
+        var settimer = document.getElementById('set');
+        var reset = document.getElementById('start');
+        var pause = document.getElementById('pause');
+        var reset = document.getElementById('reset');
+
+
+        settimer.style.display='block'
+        
+        var set = document.getElementById('set');
+        set.addEventListener('click', () => {
+            sec = parseInt(prompt('enter the seconds'));
+            min = parseInt(prompt('enter the minutes'));
+            hour = parseInt(prompt('enter the hours'));
+            if (sec <= 60 && min <= 60 && hour <= 24) {
+                hourb.innerHTML = hour
+                minb.innerHTML = min
+                secb.innerHTML = sec
+                start.style.display="block"
+            }
+            else (
+                alert('Enter proper time')
+                )
+                
+            })
+            
+        start.addEventListener('click', () => {
+            settimer.style.display='none'
+            pause.style.display="block"
+           intervalid =  setInterval(() => {
+               if(!paused && sec >1){
+                sec--;
+                secb.innerHTML = sec
+                secb.innerHTML = sec<10? '0'+ sec: sec
+               }
+               else if(!paused && min > 0 && sec === 1){
+                sec=59
+                min--
+                minb.innerHTML = min
+                minb.innerHTML = min<10? '0'+ min: min
+
+               }
+               else if(!paused && hour>0 && min === 0){
+                min=59
+                hour--
+                hourb.innerHTML = hour
+                hourb.innerHTML = hour<10? '0'+ hour:hour;
+               }
+               else{
+                clearInterval(intervalid)
+               }
+            }, 1000)
+        })
+
+        pause.addEventListener('click',()=>{
+             paused = !paused
+             console.log(paused)
+            if(paused){
+                pause.innerHTML = 'resume'
+                reset.style.display='block'
+                hourb.style.borderColor="red";
+                minb.style.borderColor="red";
+                secb.style.borderColor="red";
+            }
+            else{
+                pause.innerHTML="paused"
+                reset.style.display='none'
+                hourb.style.borderColor="white";
+                minb.style.borderColor="white";
+                secb.style.borderColor="white";
+            }
+        })
+
+        reset.addEventListener('click',()=> {
+            clearInterval(intervalid)
+            hourb.innerHTML = `00`
+            minb.innerHTML = `00`
+            secb.innerHTML = `00`
+            pause.style.display="none"
+            settimer.style.display="block"
+            reset.style.display='none'
+            start.style.display='none'
+        }
+      )
+
+
+    </script>
+    
+    <script src="script.js"></script>
+</body>
+
+</html>

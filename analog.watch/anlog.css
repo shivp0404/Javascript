@@ -1,0 +1,46 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.watchcontainer{
+    position: relative;
+    width: 28.2vw;
+    height: 28.2vw;
+    background-image: url("clock.png");
+    background-position: center;
+    border-radius: 50%;
+
+}
+
+#hour{
+    width: 3px;
+    height: 6vw;
+    position: absolute;
+    top: 28%;
+    left: 50%;
+   background-color: black;
+  transform-origin: bottom; 
+}
+#min{
+    width: 3px;
+    height: 8vw;
+    position: absolute;
+    top: 22%;
+    left: 50%;
+    background-color:black;
+    transform-origin: bottom;
+}
+  
+#sec{
+    width: 3px;
+    height: 10vw;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    background-color: black;
+transform-origin: bottom;
+}
